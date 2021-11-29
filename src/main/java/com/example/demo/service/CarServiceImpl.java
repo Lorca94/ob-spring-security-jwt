@@ -33,6 +33,11 @@ public class CarServiceImpl implements CarService {
 		return this.carRepository.findAll();
 	}
 
+	/**
+	 * It retrieves one car from database using the id property
+	 * @param id
+	 * @return
+	 */
 	@Override
 	public Optional<Car> findById(Long id) {
 		log.info("Executing findById");
